@@ -1,0 +1,32 @@
+/* 
+    ImgBB All Images Link
+
+
+
+*/
+
+/* All Common CSS Start */
+*{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.ptb-lg{
+    padding: 100px 0px;
+}
+.bg{
+    background-color: #f6f9fc;
+}
+/* All Common CSS End */
+
+
+
