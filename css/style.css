@@ -1,32 +1,183 @@
-/* 
-    ImgBB All Images Link
-
-
-
-*/
-
-/* All Common CSS Start */
-*{
-    font-family: 'Spartan', sans-serif;
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+/* defalul css */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+  
 }
-img{
-    max-width: 100%;
+
+/* price area */
+.price-area{
+  padding:60px 0;
+  background: #f6f9fc
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.price-text{
+  text-align:center;
 }
-a{
-    text-decoration: none;
+.price-text h3{
+  position:relative;
+  display: inline-block;
 }
-.ptb-lg{
-    padding: 100px 0px;
+.price-text h3:after{
+  content:"";
+  position:absolute;
+  width:50px;
+  height:2px;
+  background:#0d6efd;
+  top: 38px;
+  left: 35%;
 }
-.bg{
-    background-color: #f6f9fc;
+
+.price-item{
+  padding:40px 80px;
+  background: white;
+  text-align:center;
+  transition:0.2s;
+  margin-top:50px;
 }
-/* All Common CSS End */
+
+.price-item-text{
+  border-bottom:1px solid #ddd;
+  padding-bottom:50px;
+}
 
 
+.price-item ul{
+  list-style:none;
+  margin-top:30px;
+ 
+}
+.price-item ul li{
+  line-height:2;
+}
 
+
+.price-item:hover{
+  color:white;
+  background: #0d6efd;
+}
+.price-item:hover .default-btn{
+ background: white;
+  
+}
+
+/* defaul btn */
+.default-btn{
+  border:none;
+  position:relative;
+  display:inline-block;
+  background:#0d6efd;
+  color:#000;
+  text-decoration:none;
+  border-radius:50px;
+   padding:12px 35px;
+  overflow:hidden;
+  z-index:1;
+  opacity:;
+ 
+}
+
+
+.default-btn:after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:100%;
+  background: #0d6efd;
+  top:0;
+  left:0;
+  z-index:-1;
+  /* transform: translate(50%, -50%); */
+  opacity:0;
+  transition:0.5s;
+  border-radius:50px;
+  border:1px solid #fff;
+
+}
+
+.default-btn:hover::after{
+  opacity:1;
+   width:100%;
+  
+}
+.purchase-area{
+  margin-top:20px;
+  margin-bottom:80px;
+  padding:100px 0;
+  background: url('https://template-assignment-c25.netlify.app/img/free-bg.jpg')no-repeat center;
+  background-size: cover;
+  min-height:500px;
+  position:relative;
+  color:white;
+  z-index:1;
+
+}
+.purchase-area::after{
+  content:"";
+  background: rgba(0,0,255,0.5);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+
+}
+
+.purchase-title{
+  width:50%;
+  margin: auto;
+}
+.purchase-title h3{
+  position:relative;
+  display:inline-block;
+}
+.purchase-title h3:after{
+  content:"";
+  position:absolute;
+  width:50px;
+  height:2px;
+  background:#0d6efd;
+  top: 80px;
+  left: 40%;
+}
+
+.purchas-btn{
+  background: white!important;
+}
+
+/* newsletter area start */
+.newsletter-area{
+  margin-bottom:50px;
+}
+.subscribe{
+  padding:30px;
+  background: #0d6efd;
+  color:white;
+}
+.email{
+  border-radius:50px;
+  border:none;
+}
+
+.submit{
+  border-radius:50px;
+   background: #0d6efd;
+   border:1px solid white;
+   color:white;
+   margin-left:10px;
+}
+
+.getstart{
+ padding:30px;
+ height:200px;
+
+
+ 
+}
+.gts-btn{
+ 
+margin-top:50px;
+  
+}
